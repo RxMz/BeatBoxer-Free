@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "254571225475",
+    "firebase_url": "https://beatboxer-free-38dbc.firebaseio.com",
+    "project_id": "beatboxer-free-38dbc",
+    "storage_bucket": "beatboxer-free-38dbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254571225475:android:ee71f0c27b9bf2d7",
+        "android_client_info": {
+          "package_name": "com.todaysfuture.beatboxer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254571225475-ek6qfitop8vtilgokut8p49q887n58np.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARNOF9zntXcvFst4LXeiwWKk0upshrG7s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
