@@ -1,11 +1,13 @@
 package com.todaysfuture.beatboxer;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.SharedPreferences;
 import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -18,15 +20,32 @@ import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
 public class MainActivity extends Activity {
-    int i = 0;
-    EditText mEdit;
+    private int i = 0;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         final EditText mEdit = (EditText) findViewById(R.id.editText1);
         final EditText speed = (EditText) findViewById(R.id.speed);
+        final SharedPreferences prefs = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        mEdit.setText(prefs.getString("autoSave", ""));
+        mEdit.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
 
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+                prefs.edit().putString("autoSave", s.toString()).apply();
+            }
+        });
         //Getting Ads
         MobileAds.initialize(getApplicationContext(), "ca-app-pub-3150466150343288~2301613454");
         AdView mAdView = (AdView) findViewById(R.id.adView);
