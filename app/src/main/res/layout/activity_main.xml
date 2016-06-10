@@ -50,7 +50,7 @@
         android:layout_gravity="center"
         android:gravity="center"
         android:layout_marginTop="30dp"
-        android:text="To store beat type b, to store snare type s, to store clap type c."/>
+        android:text="To store kick type k, to store snare type s, to store clap type c."/>
     <EditText
         android:layout_marginTop="30dp"
         android:layout_width="match_parent"
@@ -84,13 +84,15 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/saver"
-                android:text="Save"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/reset"
+                android:layout_gravity="center"
                 android:text="Reset"/>
+            <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/repeat"
+            android:layout_gravity="center"
+            android:text="Repeat"/>
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"
