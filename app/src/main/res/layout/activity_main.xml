@@ -69,6 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
+            android:inputType="number"
             android:text="150"
             android:id="@+id/speed"/>
 
@@ -87,12 +88,7 @@
                 android:id="@+id/reset"
                 android:layout_gravity="center"
                 android:text="Reset"/>
-            <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/repeat"
-            android:layout_gravity="center"
-            android:text="Repeat"/>
+
     <com.google.android.gms.ads.AdView
         android:id="@+id/adView"
         android:layout_width="wrap_content"

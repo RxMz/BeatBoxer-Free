@@ -170,13 +170,6 @@ public class MainActivity extends Activity {
                 AppRater.showRateDialog(MainActivity.this,null);
             }
         });
-        Button repeater=(Button)findViewById(R.id.reset);
-        repeater.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
 
     }
 
